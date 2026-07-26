@@ -1,5 +1,7 @@
 # BinX Internship **readme**
 
+## Week 1
+
 ## Day 1 
 
 Ive setup the environment and the requierd libraries, then Ive create the requirements file
@@ -66,3 +68,70 @@ For the **hands-on lab**, I loaded the **Titanic dataset** clean it from missing
 I created 3 different plots and 1 figure containing 2 subplots.
 
 Markdowns written with AI to illustrate the work better.
+
+
+## Week 2
+
+## Day 1: Descriptive Statistics
+
+On the first day of Week 2, I learned about descriptive statistics and how they can be used to understand the center and spread of numerical data.
+
+For this task, I used the Titanic dataset and selected the Age column for analysis.
+
+First, I loaded the dataset and removed the missing age values:
+```python
+
+import pandas as pd
+import numpy as np
+
+data = pd.read_csv("../../week1/day4/train.csv")
+
+age = data["Age"]
+age = age.dropna()
+
+age.info()
+```
+After cleaning the data, I calculated the following statistical measures:
+
+**Mean**: The average passenger age.
+**Median**: The middle passenger age after sorting the values.
+**Mode**: The most frequently occurring age.
+**Standard deviation**: Shows how spread out the passenger ages are around the mean.
+**Interquartile range (IQR)**: Measures the spread of the middle 50% of the ages.
+```python
+mean = np.mean(age)
+median = np.median(age)
+
+v, c = np.unique(age, return_counts=True)
+mode = v[np.argmax(c)]
+
+std = np.std(age)
+
+q1, q3 = np.percentile(age, [25, 75])
+iqr = q3 - q1
+
+print("Mean:", mean)
+print("Median:", median)
+print("Mode:", mode)
+print("Standard Deviation:", std)
+print("IQR:", iqr)
+```
+Mean or Median?
+
+I believe the median gives a better representation of a typical passenger's age.
+
+The median age is 28, while the mean is approximately 29.7. The mean is slightly higher because some older passengers increase the overall average.
+
+Since the median is less affected by unusually high or low values, it provides a more accurate representation of the typical passenger's age in this dataset.
+
+**What I Completed**
+I loaded the Titanic train.csv dataset.
+I selected the numerical Age column and removed its missing values.
+I calculated the mean, median, mode, standard deviation, and interquartile range.
+Most of the calculations were familiar to me, but the IQR was a new concept.
+I used GPT to understand how the IQR is calculated, why it is useful, and what its result means.
+I compared the mean and median and concluded that the median better represents a typical passenger's age.
+
+This task helped me understand how descriptive statistics can summarize a dataset and explain how its values are distributed.
+
+**Day 1 is complete.**

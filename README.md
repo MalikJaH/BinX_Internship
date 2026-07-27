@@ -135,3 +135,17 @@ I compared the mean and median and concluded that the median better represents a
 This task helped me understand how descriptive statistics can summarize a dataset and explain how its values are distributed.
 
 **Day 1 is complete.**
+
+
+## Day 2: Probability & Distributions
+
+On the second day of Week 2, I learned the fundamentals of probability and probability distributions, which are basic concepts in statistics and machine learning.
+
+For the hands-on lab, I completed the following tasks:
+
+- Simulated **10,000 coin flips** using NumPy and verified that the proportion of heads approaches **0.5** as the number of trials increases.
+- Generated **10,000 samples** from a normal distribution using `np.random.normal()` and plotted a histogram to observe the characteristic **bell-shaped (Gaussian) distribution**.
+- Calculated a **conditional probability** by hand and verified the result using a simulation. The simulated probability closely matched the theoretical probability.
+- Documented each step with Markdown explanations describing what each experiment demonstrates.
+
+**Day 2 is complete.**

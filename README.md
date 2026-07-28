@@ -149,3 +149,18 @@ For the hands-on lab, I completed the following tasks:
 - Documented each step with Markdown explanations describing what each experiment demonstrates.
 
 **Day 2 is complete.**
+
+
+## Day 3: **Linear Algebra for ML**
+
+On the third day of Week 2, I learned the fundamental linear algebra concepts used in machine learning, including vectors, matrices, the dot product, and matrix multiplication.
+
+For the hands-on lab, I completed the following tasks:
+
+- Represented three data samples as a NumPy matrix, where each row is a sample and each column is a feature.
+- Computed the dot product of a sample vector and a weight vector manually, then verified the result using np.dot().
+- Used matrix multiplication (@) to generate predictions for all three samples simultaneously.
+- Created a shape mismatch error during matrix multiplication, analyzed the error message, and explained why it occurred and how to fix it using the correct matrix dimensions.
+- Documented each step with Markdown explanations.
+
+**Day 3 is complete.**

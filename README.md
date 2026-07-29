@@ -164,3 +164,18 @@ For the hands-on lab, I completed the following tasks:
 - Documented each step with Markdown explanations.
 
 **Day 3 is complete.**
+
+## Day 4: **EDA Part 1 – Distributions & Outliers**
+
+On the fourth day of Week 2, I learned the fundamentals of **Exploratory Data Analysis (EDA)** and why it is an essential step before building any machine learning model. I explored data distributions using statistical visualizations and learned how to detect potential outliers using the IQR method.
+
+For the hands-on lab, I completed the following tasks:
+
+- Loaded the **Titanic** dataset and explored its numeric and categorical features.
+- Created **histograms** for the `Age` and `Fare` columns to understand their distributions.
+- Generated **box plots** to visualize the spread of the data and identify potential outliers.
+- Applied the **Interquartile Range (IQR)** method to detect outliers in the `Age` column. The detected outliers represented elderly passengers rather than data errors, so I decided to keep them.
+- Created a **count plot** for the `Sex` column and observed that the dataset contains more male passengers than female passengers.
+- Documented the observations from each visualization using Markdown explanations.
+
+**Day 4 is complete.**

@@ -179,3 +179,18 @@ For the hands-on lab, I completed the following tasks:
 - Documented the observations from each visualization using Markdown explanations.
 
 **Day 4 is complete.**
+
+## Day 5: **EDA Part 2 – Correlation & Data Storytelling**
+
+On the fifth day of Week 2, I expanded my **EDA** by examining relationships between variables and summarizing the findings in a complete **EDA** notebook. I learned how to identify correlations, interpret their meaning, and communicate insights through data storytelling.
+
+For the hands-on lab, I completed the following tasks:
+
+- Performed **bivariate analysis** using scatter plots and grouped box plots to explore relationships between features.
+- Computed a **correlation matrix** and visualized it with a **heatmap** to identify the strongest relationships between numeric variables.
+- Used a **pair plot** to quickly inspect relationships and distributions across multiple numeric features.
+- Identified and interpreted the strongest correlations, including the relationship between `Fare` and `Pclass`, and between `SibSp` and `Parch`.
+- Combined the descriptive statistics, univariate analysis, outlier detection, bivariate analysis, and correlation analysis into a **complete narrated EDA notebook**.
+- Documented the key findings using Markdown to create a clear **data storytelling** narrative.
+
+**Day 5 is complete.**

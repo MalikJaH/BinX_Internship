@@ -194,3 +194,19 @@ For the hands-on lab, I completed the following tasks:
 - Documented the key findings using Markdown to create a clear **data storytelling** narrative.
 
 **Day 5 is complete.**
+
+
+
+## Week 3
+
+### Day 1:
+
+I watched in this day of training part of the **Scikit-learn Crash Course - Machine Learning Library for Python**
+like half an hour it was really useful and refreshs my memory.
+I love how he simplify the **scikit-learn** library, he talked also about the **Pipeline** and why to use it, also he mention **GridSearchCV** it was really useful for the model
+
+For the hands-on lab, I completed the following tasks:
+
+- I loaded the **train.csv** dataset that I used in day 4 week 1 which is for titanic, then separate it into features X and target y, the target was `Survived`
+- Then I split the dataset into 80/20 train/test with a random_state = 42.
+- I confirmed that the X_train, y_train, X_test, and y_test.

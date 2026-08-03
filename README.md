@@ -210,3 +210,26 @@ For the hands-on lab, I completed the following tasks:
 - I loaded the **train.csv** dataset that I used in day 4 week 1 which is for titanic, then separate it into features X and target y, the target was `Survived`
 - Then I split the dataset into 80/20 train/test with a random_state = 42.
 - I confirmed that the X_train, y_train, X_test, and y_test.
+
+### Day 2:
+I watched in this day of training part of the **Linear Regression in Machine Learning | Linear Regression Tutorial [With Project] | Intellipaat**
+
+it was really useful and I put everything I learned from the vedio in the `day2.ipynb` 
+
+he says that after the explanation student in high school gonna understands the linear regression, to be honest he was quitly right
+his explanation to the topic was very easy.
+
+what I learned: 
+
+- How to calculate the mean of x and y
+- Why we calculate them, and it was to get the inputs to solve the formula y = mx + c, i mean to calculate the value of m and c
+- After we got the initial values of m and c, i thought that we finish no, it was only the start, cuz we need to change both of them to get the best fit line.
+- We knew which line is better by calculating the **Residuals** for each line and comparing 
+
+For the hands-on lab, I completed the following tasks:
+
+- Trained a Linear Regression model using the California Housing dataset.
+- Displayed the model coefficients and identified the feature with the strongest effect.
+- Evaluated the model using MAE, RMSE, and R².
+- Compared the model’s RMSE with a mean baseline to check whether it added value.
+- Summarized and interpreted the results in a Markdown cell.

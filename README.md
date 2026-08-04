@@ -233,3 +233,42 @@ For the hands-on lab, I completed the following tasks:
 - Evaluated the model using MAE, RMSE, and R².
 - Compared the model’s RMSE with a mean baseline to check whether it added value.
 - Summarized and interpreted the results in a Markdown cell.
+
+
+### Day 3:
+I watched in this day of training part of the **Logistic Regression in Machine Learning: The Easiest Explanation Ever! | ML Tutorial | Intellipaat**
+
+I learned the fundamentals of **Logistic Regression in Machine Learning** and how it is different from Linear Regression.
+
+Before this day, I thought that Logistic Regression was just another type of regression that predicts numbers, but I learned that it is actually used for **classification problems**. Instead of predicting a continuous value, it predicts a probability between 0 and 1, which is then converted into a class.
+
+What I learned:
+
+- The difference between **Regression** and **Classification** problems.
+- Why Linear Regression is not suitable for classification tasks.
+- How Logistic Regression uses the **Sigmoid Function** to convert outputs into probabilities.
+- How the model decides between classes using a classification threshold (usually 0.5).
+- The meaning of **True Positive (TP), True Negative (TN), False Positive (FP), and False Negative (FN)** and how they form the confusion matrix.
+- How to evaluate classification models using:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-score
+  - AUC-ROC
+- The difference between Precision and Recall:
+  - Precision focuses on how reliable the positive predictions are.
+  - Recall focuses on how many of the actual positive cases the model was able to find.
+- Why choosing between Precision and Recall depends on the problem. For example, in the Titanic survival prediction problem, Recall can be more important because we want to identify as many survivors as possible.
+
+For the hands-on lab, I completed the following tasks:
+
+- Prepared the Titanic dataset for Logistic Regression.
+- Handled missing values and converted categorical features into numerical values.
+- Trained a Logistic Regression model.
+- Generated predictions on the test set.
+- Evaluated the model using:
+  - Confusion Matrix
+  - Classification Report
+  - Precision, Recall, and F1-score
+  - AUC score
+- Interpreted the model's performance and documented the results.

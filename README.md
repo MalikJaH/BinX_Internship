@@ -272,3 +272,43 @@ For the hands-on lab, I completed the following tasks:
   - Precision, Recall, and F1-score
   - AUC score
 - Interpreted the model's performance and documented the results.
+
+
+### Day 4: Decision Trees, Random Forests, SVM, and k-NN
+
+On this day of training, I learned about four important machine learning algorithms: **Decision Tree, Random Forest, Support Vector Machine (SVM), and k-Nearest Neighbors (k-NN)**.
+
+I completed the learning and practice examples in the **`day4.ipynb`** notebook, while the hands-on lab and model comparison tasks were completed in the **`tasks.ipynb`** notebook.
+
+#### What I Learned
+
+* A **Decision Tree** works like a flowchart and makes predictions using a series of questions or conditions.
+* A Decision Tree consists of a root node, internal nodes, branches, and leaf nodes.
+* Decision Trees can be used for both classification and regression.
+* Decision Trees usually do not require feature scaling, but they can suffer from overfitting when they become too deep.
+* A **Random Forest** combines the predictions of multiple Decision Trees to produce more stable and accurate results.
+* Random Forest can reduce overfitting compared with using a single Decision Tree.
+* Random Forest provides feature importance values that show which features had the greatest influence on its predictions.
+* **SVM** finds the best boundary that separates different classes while keeping the largest possible margin between them.
+* SVM usually requires feature scaling because its performance is affected by the ranges of the features.
+* **k-NN** classifies a new data point based on the classes of its nearest neighbors.
+* The value of **k** determines how many neighboring points are considered when making a prediction.
+* k-NN also requires feature scaling because it depends on calculating distances between data points.
+
+#### Hands-on Lab
+
+For the hands-on lab, I completed the following tasks in **`tasks.ipynb`**:
+
+* Used the same Titanic dataset and train/test split from Day 3.
+* Trained a Decision Tree model.
+* Trained a Random Forest model.
+* Scaled the data before training SVM and k-NN.
+* Trained an SVM model.
+* Trained a k-NN model.
+* Generated predictions using all four models.
+* Evaluated all models using the same metric, which was the **F1-score**.
+* Created a comparison table containing the F1-score of each model.
+* Reported the most important features identified by the Random Forest model.
+* Interpreted how the most important features influenced the model's predictions.
+* Identified the best-performing model based on the highest F1-score.
+* Explained why the best-performing model likely achieved better results on this dataset.

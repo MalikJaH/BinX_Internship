@@ -312,3 +312,37 @@ For the hands-on lab, I completed the following tasks in **`tasks.ipynb`**:
 * Interpreted how the most important features influenced the model's predictions.
 * Identified the best-performing model based on the highest F1-score.
 * Explained why the best-performing model likely achieved better results on this dataset.
+
+
+### Day 5:
+
+In this day of training, I worked on a **Titanic Survival Classification Mini-Project** and applied the full supervised machine learning workflow.
+
+I learned how to prepare the data, compare multiple models, and evaluate their performance using cross-validation and an unseen test set.
+
+What I learned:
+
+* How to split the dataset before preprocessing.
+* How to handle missing values and categorical features.
+* How to use **StandardScaler** and **One-Hot Encoding**.
+* How to compare a **Dummy Classifier, Logistic Regression, and Random Forest**.
+* How to use **5-fold Stratified Cross-Validation** for model selection.
+* How to evaluate classification models using:
+
+  * Accuracy
+  * Precision
+  * Recall
+  * F1-score
+  * ROC-AUC
+* How to use a **Confusion Matrix** to understand prediction errors.
+* Why the test set should only be used for final evaluation and not for choosing the best model.
+
+For the mini-project, I completed the following tasks:
+
+* Explored and cleaned the Titanic dataset.
+* Compared three classification models.
+* Selected the best model using cross-validation F1-score.
+* Evaluated the models on unseen test data.
+* Created a confusion matrix and documented the final results.
+
+**Day 5 Mini-Project Completed**

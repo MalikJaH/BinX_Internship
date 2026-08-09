@@ -346,3 +346,19 @@ For the mini-project, I completed the following tasks:
 * Created a confusion matrix and documented the final results.
 
 **Day 5 Mini-Project Completed**
+
+## week 4
+
+## Day 1: Train / Validation / Test Splits  
+In Week 4, I started going deeper into how machine learning models should be evaluated during development.
+
+I learned the difference between:
+
+- Training data for learning.
+- Validation data for tuning and selecting settings.
+- Test data for the final evaluation.
+[Day1 learning](week4/day1.ipynb)
+I created a 60/20/20 train/validation/test split, trained a KNN model, tuned n_neighbors using the validation set, and kept the test set untouched until the final evaluation.
+[Hadns-on Lab](week4/hands-on-lab.ipynb)
+
+This helped me understand why repeatedly tuning against the test set can give misleading results and why proper validation is important when building reliable machine learning models.

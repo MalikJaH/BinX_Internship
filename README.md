@@ -1,39 +1,47 @@
 # BinX Internship **readme**
 
+## Contents
+
+- [Week 1](#week-1)
+- [Week 2](#week-2)
+- [Week 3](#week-3)
+- [Week 4](#week-4)
+
 ## Week 1
 
-## Day 1 
+### Day 1
 
 Ive setup the environment and the requierd libraries, then Ive create the requirements file
 
 **Done**
 
-## Day 2
+### Day 2
+
 in this day I have finished 3 steps (tasks)
 
 1. **step 1** asked to write a function that takes a list of numbers and returns the mean, min, and max as a dictionary.
 
-and Ive create a func that recive list of numbers and with the help of .mean() .max() .min() I solve the step
+    and Ive create a func that recive list of numbers and with the help of .mean() .max() .min() I solve the step
 
 2. **setp 2** asked to rewrite a given for-loop that filters even numbers as a single list comprehension.
 
-and I created also a func I know it dont ask me for a func but to make everything organized easy 
+    and I created also a func I know it dont ask me for a func but to make everything organized easy
 
-```python
-[x for x in numbers if x % 2 == 0]
-```
+    ```python
+    [x for x in numbers if x % 2 == 0]
+    ```
 
 3. **step 3** asked me to  Define a small class representing a data record with at least two attributes and one method
 
-it was a good refresh to my memory I created the class named **BinX** with 2 attributes **name** and **age** finally with a method
+    it was a good refresh to my memory I created the class named **BinX** with 2 attributes **name** and **age** finally with a method
 
-named **greet**
+    named **greet**
 
 4. **step 4** asked for documentation
 
 **Done**
 
-## Day 3 
+### Day 3
 
 in this day I refresh my memory using the numpy library it was very useful for me.
 
@@ -44,7 +52,7 @@ and it was very excited to solve the 4 tasks (steps).
 
 **Done**
 
-## Day 4: Pandas: Tabular Data
+### Day 4: Pandas: Tabular Data
 
 I completed all of the learning objectives for Day 4.
 
@@ -57,7 +65,7 @@ then I let the **AI** to write the markdowns cuz I think **AI** doing this job b
 
 so can say **Day 4 IS Done**
 
-## Day 5: **Matplotlib & Week 1 Mini-Notebook**
+### Day 5: **Matplotlib & Week 1 Mini-Notebook**
 
 I learned about four basic types of plots in **Matplotlib**: **line**, **scatter**, **bar**, and **histogram**
 then I learned how to combine two plots in the same figure by using subplots
@@ -72,15 +80,15 @@ Markdowns written with AI to illustrate the work better.
 
 ## Week 2
 
-## Day 1: Descriptive Statistics
+### Day 1: Descriptive Statistics
 
 On the first day of Week 2, I learned about descriptive statistics and how they can be used to understand the center and spread of numerical data.
 
 For this task, I used the Titanic dataset and selected the Age column for analysis.
 
 First, I loaded the dataset and removed the missing age values:
-```python
 
+```python
 import pandas as pd
 import numpy as np
 
@@ -91,13 +99,15 @@ age = age.dropna()
 
 age.info()
 ```
+
 After cleaning the data, I calculated the following statistical measures:
 
-**Mean**: The average passenger age.
-**Median**: The middle passenger age after sorting the values.
-**Mode**: The most frequently occurring age.
-**Standard deviation**: Shows how spread out the passenger ages are around the mean.
-**Interquartile range (IQR)**: Measures the spread of the middle 50% of the ages.
+- **Mean**: The average passenger age.
+- **Median**: The middle passenger age after sorting the values.
+- **Mode**: The most frequently occurring age.
+- **Standard deviation**: Shows how spread out the passenger ages are around the mean.
+- **Interquartile range (IQR)**: Measures the spread of the middle 50% of the ages.
+
 ```python
 mean = np.mean(age)
 median = np.median(age)
@@ -116,7 +126,8 @@ print("Mode:", mode)
 print("Standard Deviation:", std)
 print("IQR:", iqr)
 ```
-Mean or Median?
+
+#### Mean or Median?
 
 I believe the median gives a better representation of a typical passenger's age.
 
@@ -124,20 +135,21 @@ The median age is 28, while the mean is approximately 29.7. The mean is slightly
 
 Since the median is less affected by unusually high or low values, it provides a more accurate representation of the typical passenger's age in this dataset.
 
-**What I Completed**
-I loaded the Titanic train.csv dataset.
-I selected the numerical Age column and removed its missing values.
-I calculated the mean, median, mode, standard deviation, and interquartile range.
-Most of the calculations were familiar to me, but the IQR was a new concept.
-I used GPT to understand how the IQR is calculated, why it is useful, and what its result means.
-I compared the mean and median and concluded that the median better represents a typical passenger's age.
+#### What I Completed
+
+- I loaded the Titanic train.csv dataset.
+- I selected the numerical Age column and removed its missing values.
+- I calculated the mean, median, mode, standard deviation, and interquartile range.
+- Most of the calculations were familiar to me, but the IQR was a new concept.
+- I used GPT to understand how the IQR is calculated, why it is useful, and what its result means.
+- I compared the mean and median and concluded that the median better represents a typical passenger's age.
 
 This task helped me understand how descriptive statistics can summarize a dataset and explain how its values are distributed.
 
 **Day 1 is complete.**
 
 
-## Day 2: Probability & Distributions
+### Day 2: Probability & Distributions
 
 On the second day of Week 2, I learned the fundamentals of probability and probability distributions, which are basic concepts in statistics and machine learning.
 
@@ -151,7 +163,7 @@ For the hands-on lab, I completed the following tasks:
 **Day 2 is complete.**
 
 
-## Day 3: **Linear Algebra for ML**
+### Day 3: **Linear Algebra for ML**
 
 On the third day of Week 2, I learned the fundamental linear algebra concepts used in machine learning, including vectors, matrices, the dot product, and matrix multiplication.
 
@@ -165,7 +177,7 @@ For the hands-on lab, I completed the following tasks:
 
 **Day 3 is complete.**
 
-## Day 4: **EDA Part 1 – Distributions & Outliers**
+### Day 4: **EDA Part 1 – Distributions & Outliers**
 
 On the fourth day of Week 2, I learned the fundamentals of **Exploratory Data Analysis (EDA)** and why it is an essential step before building any machine learning model. I explored data distributions using statistical visualizations and learned how to detect potential outliers using the IQR method.
 
@@ -180,7 +192,7 @@ For the hands-on lab, I completed the following tasks:
 
 **Day 4 is complete.**
 
-## Day 5: **EDA Part 2 – Correlation & Data Storytelling**
+### Day 5: **EDA Part 2 – Correlation & Data Storytelling**
 
 On the fifth day of Week 2, I expanded my **EDA** by examining relationships between variables and summarizing the findings in a complete **EDA** notebook. I learned how to identify correlations, interpret their meaning, and communicate insights through data storytelling.
 
@@ -219,7 +231,7 @@ it was really useful and I put everything I learned from the vedio in the `day2.
 he says that after the explanation student in high school gonna understands the linear regression, to be honest he was quitly right
 his explanation to the topic was very easy.
 
-what I learned: 
+#### What I learned:
 
 - How to calculate the mean of x and y
 - Why we calculate them, and it was to get the inputs to solve the formula y = mx + c, i mean to calculate the value of m and c
@@ -242,7 +254,7 @@ I learned the fundamentals of **Logistic Regression in Machine Learning** and ho
 
 Before this day, I thought that Logistic Regression was just another type of regression that predicts numbers, but I learned that it is actually used for **classification problems**. Instead of predicting a continuous value, it predicts a probability between 0 and 1, which is then converted into a class.
 
-What I learned:
+#### What I learned:
 
 - The difference between **Regression** and **Classification** problems.
 - Why Linear Regression is not suitable for classification tasks.
@@ -320,7 +332,7 @@ In this day of training, I worked on a **Titanic Survival Classification Mini-Pr
 
 I learned how to prepare the data, compare multiple models, and evaluate their performance using cross-validation and an unseen test set.
 
-What I learned:
+#### What I learned:
 
 * How to split the dataset before preprocessing.
 * How to handle missing values and categorical features.
@@ -347,9 +359,10 @@ For the mini-project, I completed the following tasks:
 
 **Day 5 Mini-Project Completed**
 
-## week 4
+## Week 4
 
-## Day 1: Train / Validation / Test Splits  
+### Day 1: Train / Validation / Test Splits
+
 In Week 4, I started going deeper into how machine learning models should be evaluated during development.
 
 I learned the difference between:
@@ -357,8 +370,11 @@ I learned the difference between:
 - Training data for learning.
 - Validation data for tuning and selecting settings.
 - Test data for the final evaluation.
+
 [Day1 learning](week4/day1/day1.ipynb)
+
 I created a 60/20/20 train/validation/test split, trained a KNN model, tuned n_neighbors using the validation set, and kept the test set untouched until the final evaluation.
+
 [Hadns-on Lab](week4/day1/hands-on-lab.ipynb)
 
 This helped me understand why repeatedly tuning against the test set can give misleading results and why proper validation is important when building reliable machine learning models.

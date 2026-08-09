@@ -357,8 +357,8 @@ I learned the difference between:
 - Training data for learning.
 - Validation data for tuning and selecting settings.
 - Test data for the final evaluation.
-[Day1 learning](week4/day1.ipynb)
+[Day1 learning](week4/day1/day1.ipynb)
 I created a 60/20/20 train/validation/test split, trained a KNN model, tuned n_neighbors using the validation set, and kept the test set untouched until the final evaluation.
-[Hadns-on Lab](week4/hands-on-lab.ipynb)
+[Hadns-on Lab](week4/day1/hands-on-lab.ipynb)
 
 This helped me understand why repeatedly tuning against the test set can give misleading results and why proper validation is important when building reliable machine learning models.

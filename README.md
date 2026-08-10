@@ -378,3 +378,19 @@ I created a 60/20/20 train/validation/test split, trained a KNN model, tuned n_n
 [Hadns-on Lab](week4/day1/hands-on-lab.ipynb)
 
 This helped me understand why repeatedly tuning against the test set can give misleading results and why proper validation is important when building reliable machine learning models.
+
+### Day 2: Cross-Validation
+
+I learned how **k-fold cross-validation** provides a more reliable evaluation than relying on a single validation split.
+
+I used `cross_val_score` to evaluate a KNN model across five folds and learned how to interpret the **mean score** and **standard deviation**.
+
+I also learned why **Stratified K-Fold** is useful for classification because it keeps approximately the same class distribution in each fold.
+
+[Day 2 Learning](week4/day2/day2.ipynb)
+
+For the hands-on lab, I tested multiple values of `n_neighbors` using **5-fold cross-validation**. The best value was `n_neighbors = 11`, with a mean accuracy of approximately **0.8132**.
+
+I compared this result with the single validation split from Day 1 and saw why cross-validation provides a more stable estimate of the model's expected performance.
+
+[Day 2 Hands-on Lab](week4/day2/hands-on-lab.ipynb)

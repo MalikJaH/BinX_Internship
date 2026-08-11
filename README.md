@@ -394,3 +394,26 @@ For the hands-on lab, I tested multiple values of `n_neighbors` using **5-fold c
 I compared this result with the single validation split from Day 1 and saw why cross-validation provides a more stable estimate of the model's expected performance.
 
 [Day 2 Hands-on Lab](week4/day2/hands-on-lab.ipynb)
+
+
+### Day 3: Bias-Variance & Diagnosing Model Fit
+
+On Day 3, I learned how to recognize **underfitting and overfitting** by comparing the training and validation scores.
+
+I learned that:
+
+* Low training and validation performance can indicate underfitting.
+* Very high training performance with lower validation performance can indicate overfitting.
+* A smaller train-validation gap with good scores usually indicates better generalization.
+
+I also learned about the **bias-variance trade-off** and how regularization techniques such as **Ridge and Lasso** can help control model complexity.
+
+For the hands-on lab, I used the Breast Cancer dataset and created three different model situations.
+
+I used an unrestricted Decision Tree to demonstrate overfitting, a simple `DummyClassifier` to demonstrate underfitting, and then reduced the complexity of the Decision Tree using `max_depth=4` and `min_samples_leaf=10`.
+
+After reducing the complexity, the model achieved **0.9626 training accuracy** and **0.9473 validation accuracy**, with a much smaller gap of **0.0152**.
+
+This helped me understand that the goal is not to get the highest training score, but to create a model that also performs well on unseen data.
+
+[Day 3 Hands-on Lab](week4/day3/hands-on-lab.ipynb)

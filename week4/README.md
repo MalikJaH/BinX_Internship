@@ -44,3 +44,32 @@ I also used Stratified K-Fold and confirmed that the class proportions remained 
 [Hands-on Lab](day2/hands-on-lab.ipynb)
 
 After these two days, I have a clearer understanding of the progression from using one validation set to using cross-validation for a more reliable estimate of model performance.
+
+
+### Day 3: Bias-Variance & Diagnosing Model Fit
+
+On Day 3, I learned about **underfitting, overfitting, and the bias-variance trade-off**.
+
+I learned that a high training score alone does not mean that the model is good. The training and validation scores should be compared to understand how well the model generalizes.
+
+I also learned about regularization using **Ridge (L2)** and **Lasso (L1)** and how regularization can reduce model complexity.
+
+For the hands-on lab, I used the Breast Cancer dataset and deliberately created different model behaviors.
+
+I trained an unrestricted Decision Tree that achieved **1.0000 training accuracy** but only **0.9123 validation accuracy**, showing overfitting.
+
+I then used a simple `DummyClassifier`, which achieved around **0.63 accuracy** on both training and validation data, to demonstrate underfitting.
+
+Finally, I reduced the Decision Tree complexity using `max_depth=4` and `min_samples_leaf=10`.
+
+The new model achieved:
+
+* Training Accuracy: **0.9626**
+* Validation Accuracy: **0.9473**
+* Gap: **0.0152**
+
+This showed me how reducing model complexity can reduce the train-validation gap and improve generalization.
+
+[Day 3 Hands-on Lab](day3/hands-on-lab.ipynb)
+
+After these three days, I have a better understanding of how to split data correctly, evaluate models using cross-validation, and diagnose whether a model is underfitting or overfitting.

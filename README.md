@@ -417,3 +417,42 @@ After reducing the complexity, the model achieved **0.9626 training accuracy** a
 This helped me understand that the goal is not to get the highest training score, but to create a model that also performs well on unseen data.
 
 [Day 3 Hands-on Lab](week4/day3/hands-on-lab.ipynb)
+
+
+### Day 4: Feature Engineering & Hyperparameter Tuning
+
+On Day 4, I learned about **feature engineering** and **hyperparameter tuning**, and how both can improve a machine learning model.
+
+I learned that feature engineering means creating new features or transforming existing ones to give the model more useful information.
+
+I also learned the difference between:
+
+* **Parameters**, which are learned by the model during training.
+* **Hyperparameters**, which are selected before training, such as `n_estimators`, `max_depth`, and `min_samples_leaf`.
+
+I also learned how **GridSearchCV** can test different hyperparameter combinations automatically using cross-validation instead of trying them manually.
+
+For the hands-on lab, I continued working with the **Titanic dataset** and a **Random Forest classifier**.
+
+I created two new engineered features:
+
+* `FamilySize`, created by combining `SibSp` and `Parch`.
+* `IsAlone`, created from `FamilySize` to indicate whether a passenger was traveling alone.
+
+I then created a hyperparameter grid for:
+
+* `n_estimators`
+* `max_depth`
+* `min_samples_leaf`
+
+I used **GridSearchCV with 5-fold cross-validation** and the **F1-score** to search for the best Random Forest settings.
+
+I also compared the tuned model with a baseline Random Forest model and analyzed the effect of the tested hyperparameters.
+
+From the feature importance results, **`FamilySize`** had a higher importance than `IsAlone`.
+
+From the GridSearchCV results, **`min_samples_leaf`** had the biggest effect on the average F1-score among the hyperparameters I tested.
+
+This day helped me understand that improving a machine learning model is not only about choosing a different algorithm. Creating better features and selecting better hyperparameters can also improve the model's performance.
+
+[Day 4 Hands-on Lab](week4/day4/hands-on-lab.ipynb)

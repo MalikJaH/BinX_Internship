@@ -73,3 +73,24 @@ This showed me how reducing model complexity can reduce the train-validation gap
 [Day 3 Hands-on Lab](day3/hands-on-lab.ipynb)
 
 After these three days, I have a better understanding of how to split data correctly, evaluate models using cross-validation, and diagnose whether a model is underfitting or overfitting.
+
+## Day 4 — Feature Engineering & Hyperparameter Tuning
+
+I learned how feature engineering can create more useful information for a machine learning model.
+
+For the hands-on lab, I created `FamilySize` and `IsAlone` from the Titanic dataset.
+
+I then used a Random Forest model and tuned:
+
+- `n_estimators`
+- `max_depth`
+- `min_samples_leaf`
+
+using `GridSearchCV` with **5-fold cross-validation**.
+
+I compared the tuned model against a baseline model and analyzed both feature importance and the effect of the tested hyperparameters.
+
+`FamilySize` was the more important engineered feature, while `min_samples_leaf` showed the largest effect on the average F1 score among the hyperparameters tested.
+
+[Day 4 Hands-on Lab](day4/hands-on-lab.ipynb)
+

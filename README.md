@@ -456,3 +456,25 @@ From the GridSearchCV results, **`min_samples_leaf`** had the biggest effect on 
 This day helped me understand that improving a machine learning model is not only about choosing a different algorithm. Creating better features and selecting better hyperparameters can also improve the model's performance.
 
 [Day 4 Hands-on Lab](week4/day4/hands-on-lab.ipynb)
+
+### Day 5: Scikit-learn Pipelines
+
+On Day 5, I learned how to combine preprocessing and modeling into one complete workflow using `Pipeline` and `ColumnTransformer`.
+
+I handled numeric and categorical columns separately, added feature engineering inside the pipeline, and used `GridSearchCV` with 5-fold cross-validation to tune the full workflow without data leakage.
+
+This helped me understand how pipelines make machine learning projects cleaner, safer, and easier to reuse.
+
+[Day 5 Hands-on Lab](day5/hands-on-lab.ipynb)
+
+### Mini-Project: Tuned End-to-End Pipeline
+
+For the mini-project, I combined the main ideas from Week 4 into one complete Titanic classification workflow.
+
+I built a leak-free pipeline, added engineered features, tuned a Random Forest model with `GridSearchCV`, and evaluated the final selected pipeline on the untouched test set.
+
+The baseline cross-validation F1 score was **0.7264**, the best tuned cross-validation F1 was **0.7573**, and the final test F1 was **0.7143**.
+
+This project helped me connect data splitting, cross-validation, feature engineering, tuning, pipelines, and final evaluation into one complete machine learning process.
+
+[Mini-Project](mini-project/week4-mini-project.ipynb)

@@ -478,3 +478,32 @@ The baseline cross-validation F1 score was **0.7264**, the best tuned cross-vali
 This project helped me connect data splitting, cross-validation, feature engineering, tuning, pipelines, and final evaluation into one complete machine learning process.
 
 [Mini-Project](mini-project/week4-mini-project.ipynb)
+
+## Week 5
+
+### Day 1: Unsupervised Learning & K-Means
+
+In Week 5, I started learning about **unsupervised learning** and how it differs from the supervised learning methods I worked with before.
+
+I learned that in unsupervised learning there is no target `y`. Instead, the model works only with the input features and tries to discover hidden structure in the data.
+
+I focused on **K-Means clustering**, which groups similar data points together based on distance.
+
+I also learned that scaling is very important for K-Means, so I used `StandardScaler` before clustering.
+
+For the hands-on lab, I used the **Iris dataset** and tested values of `k` from 1 to 10.
+
+I used the **Elbow Method** to find good candidate values for the number of clusters, then compared `k = 2` and `k = 3` using the **Silhouette Score**.
+
+The results were:
+
+* `k = 2`: **0.581750**
+* `k = 3`: **0.459948**
+
+I selected `k = 2`, trained the final K-Means model, visualized the clusters, and examined their average feature values to understand what each group represented.
+
+This helped me understand how clustering can discover meaningful groups in data without using any known labels.
+
+[Day 1 Hands-on Lab](week5/day1/hands-on-lab.ipynb)
+
+

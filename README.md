@@ -504,6 +504,6 @@ I selected `k = 2`, trained the final K-Means model, visualized the clusters, an
 
 This helped me understand how clustering can discover meaningful groups in data without using any known labels.
 
-[Day 1 Hands-on Lab](week5/day1/hands-on-lab.ipynb)
+[Day 1 Hands-on Lab](week5/day1/hands-on-lab.ipynb).
 
 

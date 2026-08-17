@@ -506,4 +506,34 @@ This helped me understand how clustering can discover meaningful groups in data 
 
 [Day 1 Hands-on Lab](week5/day1/hands-on-lab.ipynb).
 
+---   
 
+### Day 2: DBSCAN & Hierarchical Clustering
+
+On Day 2, I expanded my understanding of clustering by learning about **DBSCAN** and **Hierarchical Clustering**.
+
+I learned that DBSCAN groups observations based on **density** instead of centroids and does not require the number of clusters to be selected beforehand.
+
+I studied its two main parameters, `eps` and `min_samples`, and learned how DBSCAN can classify observations in sparse regions as **noise** using the label `-1`.
+
+I also learned about **Hierarchical Clustering** and how a **dendrogram** can be used to visualize how observations and clusters are progressively merged. By choosing a cut height on the dendrogram, we can control the final number of clusters.
+
+For the hands-on lab, I compared K-Means, DBSCAN, and Hierarchical Clustering on the same **Iris dataset**.
+
+The results were:
+
+* **K-Means:** 3 clusters
+* **DBSCAN:** 2 clusters and 17 noise points
+* **Hierarchical Clustering:** 3 clusters using a dendrogram cut height of `10`
+
+I also used **PCA** to reduce the dataset to two dimensions and visually compare how the three algorithms grouped the same observations.
+
+The comparison showed me that different clustering methods can produce different results because they define clusters differently.
+
+K-Means focuses on distance from centroids, DBSCAN focuses on dense regions and can detect noise, while hierarchical clustering focuses on the relationships between observations at different levels.
+
+This helped me understand that choosing the best clustering algorithm depends on the shape and structure of the dataset rather than simply choosing one algorithm for every problem.
+
+[Day 2 Learning](week5/day2/day2.ipynb)
+
+[Day 2 Hands-on Lab](week5/day2/hands-on-lab.ipynb)

@@ -537,3 +537,95 @@ This helped me understand that choosing the best clustering algorithm depends on
 [Day 2 Learning](week5/day2/day2.ipynb)
 
 [Day 2 Hands-on Lab](week5/day2/hands-on-lab.ipynb)
+
+
+
+
+## Day 3: Dimensionality Reduction with PCA
+
+On Day 3, I learned about **dimensionality reduction** and how **Principal Component Analysis (PCA)** can be used to reduce the number of features in a dataset while preserving as much useful information as possible.
+
+I first studied the **curse of dimensionality**. As the number of features increases, the data becomes more sparse, distance measurements can become less meaningful, models may become more prone to overfitting, and visualization becomes difficult because data with more than three dimensions cannot be directly plotted.
+
+Dimensionality reduction helps address these problems by representing the data using fewer dimensions.
+
+I then learned how **PCA** works. Instead of selecting a subset of the original features, PCA creates new features called **principal components**.
+
+Each principal component is a linear combination of the original features, and the components are ordered according to the amount of variance they explain:
+
+* `PC1` captures the largest amount of variance.
+* `PC2` captures the next largest amount of variance.
+* Additional components capture progressively smaller amounts of variance.
+
+Before applying PCA, I used `StandardScaler` because PCA is based on variance. Without scaling, features with larger numerical ranges could dominate the principal components even if they are not more important.
+
+For the hands-on lab, I applied PCA to a synthetic cardiac-style dataset containing **1,215 observations** and the following six numerical features:
+
+* `age`
+* `resting_bp`
+* `cholesterol`
+* `bmi`
+* `fasting_blood_sugar`
+* `max_heart_rate`
+
+After scaling the data, I fitted PCA using all six possible components and examined the **explained variance ratio**.
+
+The variance explained by each component was:
+
+| Component | Explained Variance |
+| --------- | -----------------: |
+| PC1       |             33.37% |
+| PC2       |             17.83% |
+| PC3       |             15.71% |
+| PC4       |             14.22% |
+| PC5       |             12.96% |
+| PC6       |              5.90% |
+
+I then calculated the **cumulative explained variance**:
+
+| Number of Components | Cumulative Variance |
+| -------------------: | ------------------: |
+|                    1 |              33.37% |
+|                    2 |              51.20% |
+|                    3 |              66.92% |
+|                    4 |              81.13% |
+|                    5 |              94.10% |
+|                    6 |             100.00% |
+
+I plotted the cumulative explained variance against the number of components and used a **95% variance threshold** to determine how many components should be retained.
+
+Five components preserved **94.10%** of the total variance, which was slightly below the required 95% threshold. Therefore, all six components were required to preserve at least 95% of the variance.
+
+This meant that, for this dataset, PCA did not provide meaningful dimensionality reduction when using a strict 95% threshold:
+
+* Original features: **6**
+* Components required for at least 95% variance: **6**
+* Total variance retained: **100%**
+
+This result showed me that PCA does not always significantly reduce the number of dimensions. In this case, the six original features contained enough distinct information that removing one complete principal component would cause the retained variance to fall below 95%.
+
+I also reduced the dataset to **two principal components** for visualization.
+
+The first two components retained:
+
+* `PC1`: **33.37%**
+* `PC2`: **17.83%**
+* Total retained variance: **51.20%**
+
+I plotted `PC1` against `PC2` in a 2D scatter plot and colored the points using the known `cardiac_risk` group.
+
+The `cardiac_risk` variable was not included as an input to PCA. It was only used after the transformation to help visually inspect whether the known groups showed any separation in the reduced space.
+
+Reducing the data from six dimensions to two dimensions made visualization possible, but it also meant that approximately **48.80% of the original variance was not represented in the plot**.
+
+This helped me understand an important trade-off in PCA:
+
+* Keeping more components preserves more information.
+* Keeping fewer components provides stronger dimensionality reduction and easier visualization.
+* Principal components are harder to interpret because they are combinations of the original features.
+
+[Day 3 Hands-on Lab](week5/day3/hands-on-lab.ipynb)
+
+Day 3 helped me understand that PCA is not simply about reducing the number of columns. The main goal is to find a smaller representation of the data while preserving as much of its variance as possible.
+
+I also learned how to use the **explained variance ratio** and **cumulative explained variance** to decide how many components should be retained, and how PCA can be used to project high-dimensional data into two dimensions for visualization.

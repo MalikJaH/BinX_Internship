@@ -182,3 +182,23 @@ This helped me understand an important trade-off in PCA:
 Day 3 helped me understand that PCA is not simply about reducing the number of columns. The main goal is to find a smaller representation of the data while preserving as much of its variance as possible.
 
 I also learned how to use the **explained variance ratio** and **cumulative explained variance** to decide how many components should be retained, and how PCA can be used to project high-dimensional data into two dimensions for visualization.
+
+## Day 4: t-SNE & Anomaly Detection
+
+On Day 4, I explored **high-dimensional visualization and anomaly detection** using t-SNE and Isolation Forest.
+
+I applied **t-SNE** to reduce six numeric features into two dimensions and visualized the results using the K-Means cluster labels from Day 1. I then compared the t-SNE visualization with **PCA**, where t-SNE showed clearer local cluster separation while PCA provided a better view of the overall variance structure.
+
+For anomaly detection, I used **Isolation Forest** with a contamination value of `0.05`. The model flagged **61 out of 1,215 observations (5.02%)** as potential anomalies.
+
+Finally, I inspected the two strongest anomalies using their feature values and z-scores. Both observations had unusually high maximum heart rates, with z-scores above `+3`, along with other uncommon feature combinations.
+
+### Key Takeaways
+
+* t-SNE is useful for visualizing local structure in high-dimensional data.
+* PCA and t-SNE reveal different aspects of the same dataset.
+* Isolation Forest can detect unusual multivariate patterns without labeled anomalies.
+* Flagged anomalies should be investigated rather than automatically treated as errors.
+
+[Day 4 Hands-on Lab](day4/hands-on-lab.ipynb)
+

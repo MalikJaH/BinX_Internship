@@ -629,3 +629,11 @@ This helped me understand an important trade-off in PCA:
 Day 3 helped me understand that PCA is not simply about reducing the number of columns. The main goal is to find a smaller representation of the data while preserving as much of its variance as possible.
 
 I also learned how to use the **explained variance ratio** and **cumulative explained variance** to decide how many components should be retained, and how PCA can be used to project high-dimensional data into two dimensions for visualization.
+
+### Day 4 — t-SNE & Anomaly Detection
+
+Explored **t-SNE** for visualizing high-dimensional data and compared its local-structure visualization with PCA. The t-SNE plot showed clearer separation between some of the K-Means clusters.
+
+Applied **Isolation Forest** with `5%` contamination to detect unusual observations, identifying **61 anomalies out of 1,215 samples (5.02%)**. The strongest flagged points were inspected using feature values and z-scores, showing that unusually high maximum heart rate and uncommon feature combinations contributed to their detection.
+
+[Day 4 Hands-on Lab](week5/day4/hands-on-lab.ipynb)
